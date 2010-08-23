@@ -1,0 +1,11 @@
+- if @string
+  %p#stringreversed
+    Your New String:
+    %span{:style=>'color:#F00'} 
+      = @string
+
+%form{:action => '/',:method=>'post'}
+  %label{:for=>'text'} String
+  %input{:id => 'text',:name=>'text'}
+  %button
+    Reverse
